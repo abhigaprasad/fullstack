@@ -2,10 +2,10 @@
   "name": "fullstack-project",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://abhigaprasad.github.io/frontend",
+  "homepage": "https://abhigaprasad.github.io/fullstack-project",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d frontend",
+    "deploy": "gh-pages -d frontend/build",
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
     "start-backend": "cd backend && npm install && npm run start",
     "start-frontend": "cd frontend && npm install && npm start",
