@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Input from '../components/Input';
 import Button from '../components/Button';
 import { loginUser } from '../services/authService';
@@ -7,7 +7,7 @@ import { loginUser } from '../services/authService';
 function Login({ setUserId, setUserRole }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const history = useHistory();
+  const history = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
